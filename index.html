@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Custom styles for this template -->
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<title>My Portfolio</title>
+
+
+		<style type="text/css">
+		/*	Mainly doing this for the responsive image library*/
+			/*		article, header,section, aside, footer {
+				border: 2px solid lightgrey;
+				padding: 10px;
+				margin: 5px;
+				font-family: Arial, sans-serif;
+				box-sizing: border-box;
+				}
+			
+			section{
+				border-color: plum;
+			}
+			footer{
+				border-color: darkmagenta;
+			}
+			aside {
+				border-color: orange;
+			}
+			article {
+				border-color: cornflowerblue;
+			}*/
+			
+		* {
+			box-sizing: border-box;
+			}
+			body {
+			margin: 0;
+			font-family: Arial;
+			}
+			.img {
+			float: left;
+			width: 60px;
+			height: 60px;
+			margin: 25px;
+			border-radius: 40px;
+			}
+			.row {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 4px;
+			}
+			.flex-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			}
+			.navigation {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			}
+			/* Create four equal columns that sits next to each other */
+			.column {
+				flex: 25%;
+				max-width: 25%;
+				padding: 0 4px;
+			} 
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media (max-width: 800px) {
+				.column {
+					flex: 50%;
+					max-width: 50%;
+				}
+			}
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media (max-width: 600px) {
+				.column {
+					flex: 100%;
+					max-width: 100%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<header>
+			<div id="navbar" class="collapse navbar-collapse fixed-top">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#"><img src="img/george.png" height="50" style="max-width: 300px" /></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Resume</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Posts</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Services
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Consulting</a>
+									<a class="dropdown-item" href="#">Retainer services</a>
+									<a class="dropdown-item" href="#">Contact</a>
+								</div>
+							</li>
+						</ul>
+						
+						<div style="display: flex; justify-content: flex-end">
+							<form class="form-inline">
+								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="#">Search</a></button>
+							</form>
+						</div>
+					</div>
+
+				</nav>
+			</div>
+		</header>
+
+		<section class="container">
+			<div class="row">
+				<div class="col-md-8">
+					
+					<div class="">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" style="width:100%;">
+								</div>
+								<div class="item">
+									<img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" style="width:100%;">
+								</div>
+								
+								<div class="item">
+									<img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New york" style="width:100%;">
+								</div>
+							</div>
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+
+					<article class="blog-post">
+						<div class="blog-post-image">
+						</div>
+						<div class="blog-post-body">
+							<h2><a href="post.html">My travel blogs</a></h2>
+							<div class="post-meta"><span>by <a href="#">George Loh</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus lectus at est faucibus, non facilisis metus finibus. Mauris vestibulum, felis eget mattis volutpat, lectus mauris euismod lectus, eu dignissim turpis magna quis quam. Aenean interdum tortor eget fermentum pulvinar. Morbi pellentesque risus dignissim nisl lobortis, at aliquam metus sodales. Proin risus quam, iaculis nec enim at, cursus consectetur lacus. Quisque id justo metus. Aliquam erat volutpat. Nullam imperdiet sollicitudin massa a blandit.</p>
+							<div class="read-more"><a href="#">Continue Reading</a></div>
+						</div>
+					</article>
+					<!-- article -->
+					<article class="blog-post">
+						<div class="blog-post-image">
+						</div>
+						<div class="blog-post-body">
+							<h2><a href="post.html">My travel blogs</a></h2>
+							<div class="post-meta"><span>by <a href="#">George Loh</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus lectus at est faucibus, non facilisis metus finibus. Mauris vestibulum, felis eget mattis volutpat, lectus mauris euismod lectus, eu dignissim turpis magna quis quam. Aenean interdum tortor eget fermentum pulvinar. Morbi pellentesque risus dignissim nisl lobortis, at aliquam metus sodales. Proin risus quam, iaculis nec enim at, cursus consectetur lacus. Quisque id justo metus. Aliquam erat volutpat. Nullam imperdiet sollicitudin massa a blandit.</p>
+							<div class="read-more"><a href="#">Continue Reading</a></div>
+						</div>
+					</article>
+					<!-- article -->
+					<article class="blog-post">
+						<div class="blog-post-image">
+						</div>
+						<div class="blog-post-body">
+							<h2><a href="post.html">My travel blogs</a></h2>
+							<div class="post-meta"><span>by <a href="#">George Loh</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus lectus at est faucibus, non facilisis metus finibus. Mauris vestibulum, felis eget mattis volutpat, lectus mauris euismod lectus, eu dignissim turpis magna quis quam. Aenean interdum tortor eget fermentum pulvinar. Morbi pellentesque risus dignissim nisl lobortis, at aliquam metus sodales. Proin risus quam, iaculis nec enim at, cursus consectetur lacus. Quisque id justo metus. Aliquam erat volutpat. Nullam imperdiet sollicitudin massa a blandit.</p>
+							<div class="read-more"><a href="#">Continue Reading</a></div>
+						</div>
+					</article>
+
+					<article class="blog-post">
+						<!-- Photo Grid -->
+						<article class="blog-post">
+							<h2><a href="post.html">Responsive Image Library</a></h2>
+							<div class="post-meta"><span>by <a href="#">George Loh</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+						</article>
+						<div class="row">
+							<div class="column">
+								<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e813bc9e93c2b7ede92476a3eddf3606&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?ixlib=rb-0.3.5&s=0d145619eba0e07e9c36ff994997ec83&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1515215316771-2742baa337f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34771350afee3d1f0eb9e27dfa7198a8&auto=format&fit=crop&w=634&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1514371879740-2e7d2068f502?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c8b4f34e0f1761ddb4fa0543fce2a0a&auto=format&fit=crop&w=1267&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1518288319310-99bc48891084?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ef9fd0b8d30669cbcc8e23b039de3bc&auto=format&fit=crop&w=1352&q=80/w3images/nature.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?ixlib=rb-0.3.5&s=05ab0ad982c2bb6046873f6e5c882d3e&auto=format&fit=crop&w=634&q=80/w3images/mist.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1478192013110-1203b3616b75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63bb13db8f69837bc89c0ba5c63bf1d1&auto=format&fit=crop&w=1350&q=80/w3images/paris.jpg" style="width:100%">
+							</div>
+							<div class="column">
+								<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e813bc9e93c2b7ede92476a3eddf3606&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?ixlib=rb-0.3.5&s=0d145619eba0e07e9c36ff994997ec83&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1515215316771-2742baa337f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34771350afee3d1f0eb9e27dfa7198a8&auto=format&fit=crop&w=634&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1514371879740-2e7d2068f502?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c8b4f34e0f1761ddb4fa0543fce2a0a&auto=format&fit=crop&w=1267&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1518288319310-99bc48891084?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ef9fd0b8d30669cbcc8e23b039de3bc&auto=format&fit=crop&w=1352&q=80/w3images/nature.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?ixlib=rb-0.3.5&s=05ab0ad982c2bb6046873f6e5c882d3e&auto=format&fit=crop&w=634&q=80/w3images/mist.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1478192013110-1203b3616b75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63bb13db8f69837bc89c0ba5c63bf1d1&auto=format&fit=crop&w=1350&q=80/w3images/paris.jpg" style="width:100%">
+							</div>
+							<div class="column">
+								<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e813bc9e93c2b7ede92476a3eddf3606&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?ixlib=rb-0.3.5&s=0d145619eba0e07e9c36ff994997ec83&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1515215316771-2742baa337f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34771350afee3d1f0eb9e27dfa7198a8&auto=format&fit=crop&w=634&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1514371879740-2e7d2068f502?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c8b4f34e0f1761ddb4fa0543fce2a0a&auto=format&fit=crop&w=1267&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1518288319310-99bc48891084?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ef9fd0b8d30669cbcc8e23b039de3bc&auto=format&fit=crop&w=1352&q=80/w3images/nature.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?ixlib=rb-0.3.5&s=05ab0ad982c2bb6046873f6e5c882d3e&auto=format&fit=crop&w=634&q=80/w3images/mist.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1478192013110-1203b3616b75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63bb13db8f69837bc89c0ba5c63bf1d1&auto=format&fit=crop&w=1350&q=80/w3images/paris.jpg" style="width:100%">
+							</div>
+							<div class="column">
+								<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e813bc9e93c2b7ede92476a3eddf3606&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?ixlib=rb-0.3.5&s=0d145619eba0e07e9c36ff994997ec83&auto=format&fit=crop&w=1350&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1515215316771-2742baa337f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34771350afee3d1f0eb9e27dfa7198a8&auto=format&fit=crop&w=634&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1514371879740-2e7d2068f502?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c8b4f34e0f1761ddb4fa0543fce2a0a&auto=format&fit=crop&w=1267&q=80" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1518288319310-99bc48891084?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ef9fd0b8d30669cbcc8e23b039de3bc&auto=format&fit=crop&w=1352&q=80/w3images/nature.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?ixlib=rb-0.3.5&s=05ab0ad982c2bb6046873f6e5c882d3e&auto=format&fit=crop&w=634&q=80/w3images/mist.jpg" style="width:100%">
+								<img src="https://images.unsplash.com/photo-1478192013110-1203b3616b75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63bb13db8f69837bc89c0ba5c63bf1d1&auto=format&fit=crop&w=1350&q=80/w3images/paris.jpg" style="width:100%">
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<aside>
+						<!-- sidebar-widget -->
+						<div class="sidebar-widget">
+							<h3 class="sidebar-title">About Me</h3>
+							<div class="widget-container widget-about">
+								<a href="post.html"><img src="img/author.jpg" alt=""></a>
+								<h4>George Loh</h4>
+								<div class="author-title">Expert Generalist</div>
+								<p>A jedi by day and a coder by night.</p>
+							</div>
+						</div>
+						<!-- sidebar-widget -->
+						<div class="sidebar-widget">
+							<h3 class="sidebar-title">Featured Posts</h3>
+							<div class="widget-container">
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-1.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">The State of the Word 2014</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-2.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">Why The Muppets Needs to Channel 30 Rock</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-3.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">The State of the Word 2014</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-4.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">Vintage-Inspired Finds for Your Home</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-5.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">The State of the Word 2014</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<h2><a href="post.html">Pricing options</a></h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-4 shadow-sm">
+						<img class="card-img-top" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Data-Science-vs.-Big-Data-vs.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="read-more" align="center"y><a href="#">Continue Reading</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4 shadow-sm">
+						<img class="card-img-top" src="http://www.himss.org/sites/himssorg/files/making-case-data-analytics.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="read-more" align="center"><a href="#">Continue Reading</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4 shadow-sm">
+						<img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUhlb_G8ES74nzhhK81-9va7QtOIhb5D165gBFwrgIYhO-BGOTbQ" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<div class="read-more" align="center"><a href="#">Continue Reading</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="container">
+			<h2><a href="post.html">Disclaimer</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat dui viverra, molestie urna non, facilisis tellus. Pellentesque at tortor nec ex venenatis finibus nec quis risus. In hac habitasse platea dictumst. Sed sed mi ac quam ultrices dignissim. Morbi consectetur arcu urna, at sagittis ligula laoreet pretium. In hac habitasse platea dictumst. Pellentesque mattis dui justo, eu accumsan massa scelerisque at. Aenean non bibendum urna. Nunc at arcu in quam aliquam iaculis non nec neque. Sed et mi venenatis risus aliquam ullamcorper at sed ligula. Maecenas eleifend enim eget nisl accumsan, vel viverra metus euismod. Mauris blandit pharetra ex non elementum. Nullam ex nibh, consequat id fringilla in, pharetra at ligula. Curabitur congue sit amet lectus eu lacinia.</p>
+			<p>Nam posuere semper mauris. Phasellus vitae odio nec nunc egestas dignissim. Pellentesque diam sem, convallis quis mattis quis, luctus ut augue. Donec velit tellus, volutpat sit amet dolor in, molestie aliquam ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sodales est purus, ut interdum justo interdum non. Praesent quis facilisis ante. Morbi eu porta nunc, id aliquet est. Sed vitae orci tellus. Suspendisse tristique odio ante, ut condimentum justo euismod nec. Vivamus maximus nibh sit amet quam auctor, commodo dictum erat porta. Quisque pellentesque arcu sapien, ac aliquam ipsum lobortis sed. Aenean interdum hendrerit lacus, a faucibus elit viverra vitae. Nullam leo libero, egestas a sem nec, hendrerit volutpat dui.</p>
+			<p>Nam sit amet felis in dui suscipit mattis ut ac ipsum. Quisque lectus magna, laoreet ac orci ac, vestibulum vehicula ipsum. Suspendisse id tortor nec felis lobortis gravida. Sed rhoncus ipsum sit amet magna placerat, ac cursus est vestibulum. Aliquam ut ligula sit amet sapien fermentum feugiat. Suspendisse potenti. Cras in mauris quis metus aliquet pulvinar. Suspendisse eget dui sapien. Proin tempor lorem non vehicula gravida. Aliquam semper est eu dolor molestie egestas eu vel eros. In vel finibus massa, at eleifend enim. Aenean vitae lorem sit amet felis ullamcorper pulvinar. Quisque non volutpat mauris.</p>
+			<p>Sed vehicula ut odio id vestibulum. Praesent porta diam vel ipsum commodo, pharetra sodales risus suscipit. In vel quam diam. Quisque nulla felis, feugiat sed elit a, cursus vestibulum sapien. Phasellus blandit orci quis massa hendrerit accumsan. Vivamus auctor viverra mi in porta. Sed in turpis sit amet sapien imperdiet cursus. Aliquam ac orci non nisl vehicula hendrerit vel sed mi.</p>
+			<P>Nullam risus nunc, congue eu augue in, faucibus semper dolor. Curabitur commodo elementum dolor ut ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. In mollis dignissim tortor nec gravida. Donec lacinia nulla sit amet ipsum finibus laoreet. Phasellus blandit rutrum faucibus. Donec quis luctus mi. Phasellus varius mollis ultricies. Quisque tincidunt sed lorem scelerisque molestie. Proin vehicula, enim sit amet scelerisque malesuada, felis enim vulputate odio, id cursus quam ex non risus.</p>
+		</section>
+
+		<footer>
+			Copyright &copy: George Loh, Please contact the <a href="#">webmaster</a> for any issues with this website.
+		</footer>
+	</body>
+</html>

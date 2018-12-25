@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Custom styles for this template -->
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<title>My Portfolio</title>
+
+
+		<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+li {
+	border-style: solid;
+	border-color: black;
+	margin: 5px;
+	bottom: 90px;
+	position: relative;
+	display: inline-block;
+}
+
+li img {
+	width: 250px;
+	height: 250px;
+}
+
+.point-container{
+	background-color: white;
+	height: 112.5px;
+	position: relative;
+	bottom: 135px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	border-style:solid;
+	border-color: black;
+	width: 150px;
+	border-radius: 10px;
+	margin-left: 45px;
+	padding: 7.5px;
+	font-size: 30px;
+
+}
+
+#tag-container {
+	position: relative;
+	left: 250px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 55%;
+	font-size: 24px;
+}
+
+.tag {
+	border-style: solid;
+	border-color: black;
+	border-radius: 7.5px;
+	padding: 7.5px;
+}
+
+		</style>
+	</head>
+
+	<body>
+		
+		<header>
+			<div id="navbar" class="collapse navbar-collapse fixed-top">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#"><img src="img/george.png" height="50" style="max-width: 300px" /></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Resume</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Posts</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Services
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Consulting</a>
+									<a class="dropdown-item" href="#">Retainer services</a>
+									<a class="dropdown-item" href="#">Contact</a>
+								</div>
+							</li>
+						</ul>
+						
+						<div style="display: flex; justify-content: flex-end">
+							<form class="form-inline">
+								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="#">Search</a></button>
+							</form>
+						</div>
+					</div>
+
+				</nav>
+			</div>
+		</header>
+
+<div class="row">
+   </br>
+ </div>
+
+ <div class="row">
+   </br>
+ </div>
+
+		<section class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<article class="blog-post">
+					<style>
+					.button {
+					  background-color: #4CAF50; /* Green */
+					  border: none;
+					  color: white;
+					  padding: 16px 32px;
+					  text-align: center;
+					  text-decoration: none;
+					  display: inline-block;
+					  font-size: 16px;
+					  margin: 4px 2px;
+					  -webkit-transition-duration: 0.4s; /* Safari */
+					  transition-duration: 0.4s;
+					  cursor: pointer;
+					}
+
+					.label1 {
+					  background-color: white; 
+					  color: black; 
+					  border: 2px solid #4CAF50;
+					}
+
+					.label1:hover {
+					  background-color: #4CAF50;
+					  color: white;
+					}
+
+					.label2 {
+					  background-color: white; 
+					  color: black; 
+					  border: 2px solid #008CBA;
+					}
+
+					.label2:hover {
+					  background-color: #008CBA;
+					  color: white;
+					}
+
+					.label3 {
+					  background-color: white; 
+					  color: black; 
+					  border: 2px solid #f44336;
+					}
+
+					.label3:hover {
+					  background-color: #f44336;
+					  color: white;
+					}
+
+					.label4 {
+					  background-color: white;
+					  color: black;
+					  border: 2px solid #e7e7e7;
+					}
+
+					.label4:hover {background-color: #e7e7e7;}
+					</style>
+
+
+					<button class="button label1">INDONESIA</button>
+					<button class="button label2">SINGAPORE</button>
+					<button class="button label3">AUSTRALIA</button>
+					<button class="button label4">CITY</button>
+					
+
+					<h1>Guess a Tag Game</h1>
+					<p>Not a fun game; for illustrative purposes only.</p>
+					<p><strong>Tip:</strong> Click on the right images generated through JS!</p>
+					<div class="row">
+					   </br>
+					 </div>
+
+					 <div class="row">
+					   </br>
+					 </div>
+
+					<div class="row">
+					   </br>
+					 </div>
+
+					 <div class="row">
+					   </br>
+					 </div>
+
+					<ul id = "list-data"></ul>
+						<script src="guess.js"></script>
+						</div>
+
+					</article>
+
+				<div class="col-md-4">
+					<aside>
+						<!-- sidebar-widget -->
+						<div class="sidebar-widget">
+							<h3 class="sidebar-title">About Me</h3>
+							<div class="widget-container widget-about">
+								<a href="post.html"><img src="img/author.jpg" alt=""></a>
+								<h4>George Loh</h4>
+								<div class="author-title">Expert Generalist</div>
+								<p>A jedi by day and a coder by night.</p>
+							</div>
+						</div>
+						<!-- sidebar-widget -->
+						<div class="sidebar-widget">
+							<h3 class="sidebar-title">Featured Posts</h3>
+							<div class="widget-container">
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-1.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">The State of the Word 2014</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-2.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">Why The Muppets Needs to Channel 30 Rock</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-3.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">The State of the Word 2014</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-4.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">Vintage-Inspired Finds for Your Home</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+								<article class="widget-post">
+									<div class="post-image">
+										<a href="post.html"><img src="images/90x60-5.jpg" alt=""></a>
+									</div>
+									<div class="post-body">
+										<h2><a href="post.html">The State of the Word 2014</a></h2>
+										<div class="post-meta">
+											<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="post.html"><i class="fa fa-comment-o"></i> 23</a></span>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
